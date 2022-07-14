@@ -50,9 +50,8 @@ assignment.countEvenNumbers = countEvenNumbers;
 function celsiusToFahrenheit(arrayOfNumbers) {
   var newArray = [];
     for (num in arrayOfNumbers) {
-      num *= 9 / 5;
-      num + 32;
-      newArray.push(num);
+      var celsius = (num * 1.8) + 32;
+      newArray.push(celsius);
     }
   return newArray;
 }
