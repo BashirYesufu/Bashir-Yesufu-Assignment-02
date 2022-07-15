@@ -54,7 +54,7 @@ function celsiusToFahrenheit(arrayOfNumbers) {
   var newArray = [];
     for (num in arrayOfNumbers) {
       var celsius = num * 9 / 5 + 32;
-      newArray.push(celsius);
+      newArray.push(Math.trunc(celsius));
     }
   return newArray;
   }
